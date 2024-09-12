@@ -23,7 +23,7 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: ls -la
+      - run: cd app && ls -la
       - persist_to_workspace:
           root: .
           paths:
